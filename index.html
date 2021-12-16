@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>CityBreak App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="https://use.typekit.net/zyz1iiy.css" />
+  <link rel="stylesheet" href="css/lightbox.min.css" />
+  <script src="js/lightbox-plus-jquery.min.js"></script>
+</head>
+
+<body>
+  <!-- navigation menu -->
+  <nav>
+    <div class="tabbar" id="menu">
+      <div class="menu-item">
+        <a href="#/explore" class="nav-link">
+          <svg xmlns="http://www.w3.org/2000/svg" width="19.92" height="20.298" viewBox="0 0 19.92 20.298">
+            <path id="Icon_material-explore" data-name="Icon material-explore"
+              d="M12.96,12.033a1.117,1.117,0,1,0,1.1,1.116A1.1,1.1,0,0,0,12.96,12.033ZM12.96,3A10.06,10.06,0,0,0,3,13.149,10.06,10.06,0,0,0,12.96,23.3a10.06,10.06,0,0,0,9.96-10.149A10.06,10.06,0,0,0,12.96,3Zm2.181,12.372L6.984,19.239l3.795-8.312L18.936,7.06Z"
+              transform="translate(-3 -3)" fill="#a3a9ac" /></svg><br />Explore</a>
+      </div>
+
+      <div class="menu-item">
+        <a href="#/myTrips" class="nav-link">
+          <svg xmlns="http://www.w3.org/2000/svg" width="23.55" height="20.606" viewBox="0 0 23.55 20.606">
+            <path id="Icon_awesome-suitcase" data-name="Icon awesome-suitcase"
+              d="M5.887,22.856H17.662V4.458A2.208,2.208,0,0,0,15.455,2.25H8.1A2.208,2.208,0,0,0,5.887,4.458ZM8.831,5.194h5.887V6.666H8.831ZM23.55,8.873V20.648a2.208,2.208,0,0,1-2.208,2.208H19.134V6.666h2.208A2.208,2.208,0,0,1,23.55,8.873ZM4.416,22.856H2.208A2.208,2.208,0,0,1,0,20.648V8.873A2.208,2.208,0,0,1,2.208,6.666H4.416Z"
+              transform="translate(0 -2.25)" fill="#a3a9ac" /></svg><br />My trips</a>
+      </div>
+
+      <div class="menu-item">
+        <a href="#/profile" class="nav-link">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20.603" height="20.603" viewBox="0 0 20.603 20.603">
+            <path id="Icon_awesome-user-alt" data-name="Icon awesome-user-alt"
+              d="M10.3,11.589A5.795,5.795,0,1,0,4.507,5.795,5.8,5.8,0,0,0,10.3,11.589Zm5.151,1.288H13.235a7,7,0,0,1-5.867,0H5.151A5.15,5.15,0,0,0,0,18.027v.644A1.932,1.932,0,0,0,1.932,20.6h16.74A1.932,1.932,0,0,0,20.6,18.671v-.644A5.15,5.15,0,0,0,15.452,12.877Z"
+              fill="#a3a9ac" /></svg><br />Profile</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ONBOARDING -->
+  <section id="welcome" class="page onboard">
+
+    <div id='hideMe'>
+      <img src="media/logo white.png" class="open_logo" />
+    </div>
+    <div class="onboarding-dots">
+      <a href="#/" class="nav-link">
+        <div class="active-dot"></div>
+      </a>
+      <a href="#/onboard1" class="nav-link">
+        <div class="passive-dot"></div>
+      </a>
+      <a href="#/onboard2" class="nav-link">
+        <div class="passive-dot"></div>
+      </a>
+      <a href="#/onboard3" class="nav-link">
+        <div class="passive-dot"></div>
+      </a>
+    </div>
+    <a href="#/explore" class="skip-button nav-link">Skip</a>
+
+    <img src="media/logo1.png" class="boarding-logo" />
+
+    <div class="welcome-message">
+      <h1 style="color: #082747; display: inline">Welcome to</h1>
+      <br />
+      <h1 style="color: #d42d26; display: inline">CityBreak App</h1>
+      <br />
+      <h1 style="color: #082747; display: inline">
+        - your travel guide in Denmark
+      </h1>
+    </div>
+
+    <a href="#/onboard1" class="nav-link next" style="display: block"><button class="next-button">Next</button></a>
+  </section>
+
+  <section id="onboard1" class="page onboard">
+    <div class="onboarding-dots">
+      <a href="#/" class="nav-link">
+        <div class="passive-dot"></div>
+      </a>
+      <a href="#/onboard1" class="nav-link">
+        <div class="active-dot"></div>
+      </a>
+      <a href="#/onboard2" class="nav-link">
+        <div class="passive-dot"></div>
+      </a>
+      <a href="#/onboard3" class="nav-link">
+        <div class="passive-dot"></div>
+      </a>
+    </div>
+    <a href="#/" class="nav-link"><img src="media/arrow-left.png" class="onboarding-back" /></a>
+    <a href="#/explore" class="skip-button nav-link">Skip</a>
+
+    <img src="media/logo1.png" class="boarding-logo" />
+
+    <div class="city-container">
+      <div class="city-item city1">
+        <div class="frame">
+          <p class="frame-content">AARHUS</p>
+        </div>
+      </div>
+      <div class="city-item city2">
+        <div class="frame">
+          <p class="frame-content">COPENHAGEN</p>
+        </div>
+      </div>
+      <div class="city-item city3">
+        <div class="frame">
+          <p class="frame-content">AALBORG</p>
+        </div>
+      </div>
+      <div class="city-item city4">
+        <div class="frame">
+          <p class="frame-content">ODENSE</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="onboarding-message">
+      <h1 style="color: #082747">Select the city</h1>
+      <p>
+        Browse through Denmark’s best places and choose your next destination.
+      </p>
+    </div>
+
+    <a href="#/onboard2" class="nav-link next" style="display: block"><button class="next-button">Next</button></a>
+  </section>
+  <section id="onboard2" class="page onboard">
+    <div class="onboarding-dots">
+      <a href="#/" class="nav-link">
+        <div class="passive-dot"></div>
+      </a>
+      <a href="#/onboard1" class="nav-link">
+        <div class="passive-dot"></div>
+      </a>
+      <a href="#/onboard2" class="nav-link">
+        <div class="active-dot"></div>
+      </a>
+      <a href="#/onboard3" class="nav-link">
+        <div class="passive-dot"></div>
+      </a>
+    </div>
+    <a href="#/onboard1" class="nav-link"><img src="media/arrow-left.png" class="onboarding-back" /></a>
+    <a href="#/explore" class="skip-button nav-link">Skip</a>
+
+    <img src="media/logo1.png" class="boarding-logo" />
+
+    <div class="options-container">
+      <div class="option-item2 option1">
+        <img src="icons/restaurant.png" class="option-icon2" />
+        <h6>Places to eat</h6>
+      </div>
+      <div class="option-item2 option2">
+        <img src="icons/museum.png" class="option-icon2" />
+        <h6>Attractions</h6>
+      </div>
+      <div class="option-item2 option3">
+        <img src="icons/calendar.png" class="option-icon2" />
+        <h6>Events</h6>
+      </div>
+      <div class="option-item2 option4">
+        <img src="icons/running.png" class="option-icon2" />
+        <h6>Activities</h6>
+      </div>
+    </div>
+
+    <div class="onboarding-message">
+      <h1 style="color: #082747">Check out what to do</h1>
+      <p>
+        Looking for more detailed information? Have a look to our highlights
+        through categories to know what a city can offer you.
+      </p>
+    </div>
+
+    <a href="#/onboard3" class="nav-link next" style="display: block"><button class="next-button">Next</button></a>
+  </section>
+  <section id="onboard3" class="page onboard">
+    <div class="onboarding-dots">
+      <a href="#/" class="nav-link">
+        <div class="passive-dot"></div>
+      </a>
+      <a href="#/onboard1" class="nav-link">
+        <div class="passive-dot"></div>
+      </a>
+      <a href="#/onboard2" class="nav-link">
+        <div class="passive-dot"></div>
+      </a>
+      <a href="#/onboard3" class="nav-link">
+        <div class="active-dot"></div>
+      </a>
+    </div>
+    <a href="#/onboard2" class="nav-link"><img src="media/arrow-left.png" class="onboarding-back" /></a>
+
+    <img src="media/logo1.png" class="boarding-logo" />
+
+    <div class="fav-conatiner">
+      <div class="fav-item fav1">
+        <div class="fav-frame">
+          <div class="fav-like"><img src="media/heart.png" /></div>
+          <div class="fav-icon1">
+            <img src="icons/running.png" class="favi" />
+          </div>
+        </div>
+      </div>
+      <div class="fav-item fav2">
+        <div class="fav-frame">
+          <div class="fav-like"><img src="media/heart.png" /></div>
+          <div class="fav-icon2">
+            <img src="icons/restaurant.png" class="favi" />
+          </div>
+        </div>
+      </div>
+      <div class="fav-item fav3">
+        <div class="fav-frame">
+          <div class="fav-like"><img src="media/heart.png" /></div>
+          <div class="fav-icon3">
+            <img src="icons/calendar.png" class="favi" />
+          </div>
+        </div>
+      </div>
+      <div class="fav-item fav4">
+        <div class="fav-frame">
+          <div class="fav-like"><img src="media/heart.png" /></div>
+          <div class="fav-icon4">
+            <img src="icons/museum.png" class="favi" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="onboarding-message">
+      <h1 style="color: #082747">Pick your favourites</h1>
+      <p>
+        Found a location that you’d like to visit? Add it to your trips and
+        plan your holiday!
+      </p>
+    </div>
+
+    <a href="#/login" class="nav-link next" style="display: block"><button class="next-button">Get started</button></a>
+  </section>
+
+  <section id="login" class="page">
+    <img src="media/logo1.png" class="boarding-logo_login" />
+
+    <div class="login_message">
+      <h1">Ready to tick sights off your list?</h1>
+    </div>
+
+    <div class="login_form">
+      <form class="form_login">
+        <input type="name" placeholder="Enter username" class="form_input" />
+        <input type="password" placeholder="Create a password" class="form_input" />
+      </form>
+    </div>
+
+    <a href="#/explore" class="nav-link"><button class="login_button" onclick="showMenu()">Sign up</button></a>
+
+    <div class="login_bottom">
+      <p class="login_question">Already a member?</p>
+      <p class="member_login">Log in</p>
+    </div>
+  </section>
+
+  <!-- EXPLORE -->
+  <section id="explore" class="page">
+    <div class="top_logo_background">
+      <img src="media/logo white.png" alt="white logo" class="top_logo" />
+    </div>
+    <div class="landing_text">
+      <h4 class="hello">Hello Anna!</h4>
+      <h1 class="main_text">Let's plan <br />your next trip!</h1>
+      <hr />
+      <h4 class="question">Where are you going?</h4>
+      <div class="search_container">
+        <form action="/" method="GET" class="form">
+          <button type="submit" class="search-button">
+            <img src="media/magnifying-glass.svg" alt="magnifying glass" />
+          </button>
+          <input type="search" placeholder="Search" class="search-field" />
+        </form>
+      </div>
+    </div>
+    <div class="city-container2">
+      <a href="#/aarhus" class="city-item2 aarhus nav-link">
+        <div class="frame2">
+          <p class="frame-content">AARHUS</p>
+        </div>
+      </a>
+      <div class="city-item2 cph">
+        <div class="frame2">
+          <p class="frame-content">COPENHAGEN</p>
+        </div>
+      </div>
+      <div class="city-item2 aalborg">
+        <div class="frame2">
+          <p class="frame-content">AALBORG</p>
+        </div>
+      </div>
+      <div" class="city-item2 odense">
+        <div class="frame2">
+          <p class="frame-content">ODENSE</p>
+        </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- Aarhus -->
+  <section id="aarhus" class="page">
+    <img src="media/aarhus2.jpg" alt="aarhus" class="aarhus_top" />
+    <div class="frame3">
+      <a href="#/explore" class="nav-link"><img src="media/logo-heart.png" alt="logo" class="logo_heart_top" /></a>
+      <p class="frame-content3">AARHUS</p>
+    </div>
+
+    <div class="main_section">
+      <h4 class="main_heading">About</h4>
+      <p class="about_paragraph">
+        In Denmark's second largest city, high-quality international
+        experiences await you!
+        <br />
+        Regardless of whether you are visiting attractions, looking for modern
+        architecture, delicious gastronomy or wonderful activities such as
+        shopping, cozy events or fun and action.
+      </p>
+
+      <h4 class="main_heading">Images</h4>
+      <div class="gallery">
+        <a href="media/aarhus/aarhus (1).jpg " data-lightbox="mygallery"><img src="media/aarhus/aarhus (1).jpg"
+            class="gallery_photo" /></a>
+
+        <a href="media/aarhus/aarhus (10).jpg" data-lightbox="mygallery"><img src="media/aarhus/aarhus (10).jpg"
+            class="gallery_photo" /></a>
+
+        <a href="media/aarhus/aarhus (11).jpg" data-lightbox="mygallery"><img src="media/aarhus/aarhus (11).jpg"
+            class="gallery_photo" /></a>
+
+        <a href="media/aarhus/aarhus (5).jpg" data-lightbox="mygallery"><img src="media/aarhus/aarhus (5).jpg"
+            class="gallery_photo" /></a>
+
+        <a href="media/aarhus/aarhus (6).jpg" data-lightbox="mygallery"><img src="media/aarhus/aarhus (6).jpg"
+            class="gallery_photo" /></a>
+
+        <a href="media/aarhus/aarhus (7).jpg" data-lightbox="mygallery"><img src="media/aarhus/aarhus (7).jpg"
+            class="gallery_photo" /></a>
+
+        <a href="media/aarhus/aarhus (8).jpg" data-lightbox="mygallery"><img src="media/aarhus/aarhus (8).jpg"
+            class="gallery_photo" /></a>
+
+        <a href="media/aarhus/aarhus (9).jpg" data-lightbox="mygallery"><img src="media/aarhus/aarhus (9).jpg"
+            class="gallery_photo" /></a>
+      </div>
+
+      <h4 class="main_heading">What to do?</h4>
+      <div class="options-container2">
+        <a href="#/placesToEat" onclick="filterByPlacesToEat();" class="option-item2 option1 nav-link">
+          <img src="icons/restaurant.png" class="option-icon2" />
+          <h6>Places to eat</h6>
+        </a>
+
+        <a href="#/attractions" onclick="filterByAttractions();" class="option-item2 option2 nav-link">
+          <img src="icons/museum.png" class="option-icon2" />
+          <h6>Attractions</h6>
+        </a>
+
+        <a href="#/events" onclick="filterByEvents();" class="option-item2 option3 nav-link">
+          <img src="icons/calendar.png" class="option-icon2" />
+          <h6>Events</h6>
+        </a>
+
+        <a href="#/activities" onclick="filterByAttractions();" class="option-item2 option4 nav-link">
+          <img src="icons/running.png" class="option-icon2" />
+          <h6>Activities</h6>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PLACES TO EAT -->
+  <section id="placesToEat" class="page">
+    <img src="media/aarhus2.jpg" alt="aarhus" class="aarhus_top" />
+    <div class="frame3">
+      <a href="#/explore" class="nav-link">
+        <img src="media/logo-heart.png" alt="logo" class="logo_heart_top" /></a>
+      <p class="frame-content3">AARHUS</p>
+    </div>
+    <div class="container_data">
+      <a href="#/aarhus" class="nav-link">
+        <img src="media/arrow-left.png" class="arrow_back" /></a>
+
+      <div class="categories_buttons">
+        <a href="#/placesToEat" onclick="filterByPlacesToEat();" class="category_button active_button nav-link">Places
+          to eat</a>
+        <a href="#/attractions" onclick="filterByAttractions();" class="category_button nav-link">Attractions</a>
+        <a href="#/events" onclick="filterByEvents();" class="category_button nav-link">Events</a>
+        <a href="#/activities" onclick="filterByAttractions();" class="category_button nav-link">Activities</a>
+      </div>
+    </div>
+
+    <div class="eat_cards_container">
+
+    </div>
+
+
+  </section>
+
+  <!-- ATTRACTIONS -->
+  <section id="attractions" class="page">
+    <img src="media/aarhus2.jpg" alt="aarhus" class="aarhus_top" />
+    <div class="frame3">
+      <a href="#/explore" class="nav-link">
+        <img src="media/logo-heart.png" alt="logo" class="logo_heart_top" /></a>
+      <p class="frame-content3">AARHUS</p>
+    </div>
+    <div class="container_data">
+      <a href="#/aarhus" class="nav-link">
+        <img src="media/arrow-left.png" class="arrow_back" /></a>
+
+      <div class="categories_buttons">
+        <a href="#/placesToEat" onclick="filterByPlacesToEat();" class="category_button nav-link">Places to eat</a>
+        <a href="#/attractions" onclick="filterByAttractions();"
+          class="category_button active_button nav-link">Attractions</a>
+        <a href="#/events" onclick="filterByEvents();" class="category_button nav-link">Events</a>
+        <a href="#/activities" onclick="filterByAttractions();" class="category_button nav-link">Activities</a>
+      </div>
+    </div>
+
+    <div class="attractions_cards_container">
+
+    </div>
+  </section>
+
+  <!-- EVENTS -->
+  <section id="events" class="page">
+    <img src="media/aarhus2.jpg" alt="aarhus" class="aarhus_top" />
+    <div class="frame3">
+      <a href="#/explore" class="nav-link">
+        <img src="media/logo-heart.png" alt="logo" class="logo_heart_top" /></a>
+      <p class="frame-content3">AARHUS</p>
+    </div>
+    <div class="container_data">
+      <a href="#/aarhus" class="nav-link">
+        <img src="media/arrow-left.png" class="arrow_back" /></a>
+
+      <div class="categories_buttons">
+        <a href="#/placesToEat" onclick="filterByPlacesToEat();" class="category_button nav-link">Places to eat</a>
+        <a href="#/attractions" onclick="filterByAttractions();" class="category_button nav-link">Attractions</a>
+        <a href="#/events" onclick="filterByEvents();" class="category_button active_button nav-link">Events</a>
+        <a href="#/activities" onclick="filterByActivities();" class="category_button nav-link">Activities</a>
+      </div>
+    </div>
+
+    <div class="events_cards_container">
+
+    </div>
+  </section>
+
+  <!-- ACTIVITIES -->
+  <section id="activities" class="page">
+    <img src="media/aarhus2.jpg" alt="aarhus" class="aarhus_top" />
+    <div class="frame3">
+      <a href="#/explore" class="nav-link">
+        <img src="media/logo-heart.png" alt="logo" class="logo_heart_top" /></a>
+      <p class="frame-content3">AARHUS</p>
+    </div>
+    <div class="container_data">
+      <a href="#/aarhus" class="nav-link">
+        <img src="media/arrow-left.png" class="arrow_back" /></a>
+
+      <div class="categories_buttons_activities">
+        <a href="#/placesToEat" onclick="filterByPlacesToEat();" class="category_button nav-link">Places to eat</a>
+        <a href="#/attractions" onclick="filterByAttractions();" class="category_button nav-link">Attractions</a>
+        <a href="#/events" onclick="filterByEvents();" class="category_button nav-link">Events</a>
+        <a href="#/activities" onclick="filterByActivities();"
+          class="category_button active_button nav-link">Activities</a>
+      </div>
+    </div>
+    <div class="activities_cards_container">
+
+    </div>
+  </section>
+
+  <section id="allLocations" class="page"></section>
+
+  <!-- MY TRIPS -->
+  <section id="myTrips" class="page">
+    <div class="top_logo_background">
+      <img src="media/logo white.png" alt="white logo" class="top_logo" />
+    </div>
+    <div class="landing_text_mytrips">
+      <h1 class="main_text">Here are all your trip plans for every destination.</h1>
+      <hr />
+    </div>
+    <div class="city-container_mytrips">
+      <a href="#/favourites" class="city-item_mytrips aarhus nav-link">
+        <div class="frame_mytrips">
+          <p class="frame-content_mytrips">AARHUS</p>
+        </div>
+      </a>
+      <div class="city-item_mytrips cph">
+        <div class="frame_mytrips">
+          <p class="frame-content_mytrips">COPENHAGEN</p>
+        </div>
+      </div>
+      <div class="city-item_mytrips aalborg">
+        <div class="frame_mytrips">
+          <p class="frame-content_mytrips">AALBORG</p>
+        </div>
+      </div>
+      <div class="city-item_mytrips odense">
+        <div class="frame_mytrips">
+          <p class="frame-content_mytrips">ODENSE</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAVOURITES -->
+  <section id="favourites" class="page">
+    <img src="media/aarhus2.jpg" alt="aarhus" class="aarhus_top" />
+    <div class="frame3">
+      <a href="#/explore" class="nav-link">
+        <img src="media/logo-heart.png" alt="logo" class="logo_heart_top" /></a>
+      <p class="frame-content3">AARHUS</p>
+    </div>
+    <div class="container_data">
+      <a href="#/myTrips" class="nav-link">
+        <img src="media/arrow-left.png" class="arrow_back" /></a>
+      <div class="city-container_mytrips">
+        <h2 class="fav-heading">Your favourites</h2>
+        <div class="fav_eat_container"></div>
+      </div>
+  </section>
+
+
+  <!-- DETAILEDVIEW -->
+  <section id="detailedView" class="page">
+    <div id="detailedViewContainer">
+    </div>
+  </section>
+
+  <!-- PROFILE -->
+  <section id="profile" class="page">
+    <div class="top_logo_background">
+      <img src="media/logo white.png" alt="white logo" class="top_logo" />
+    </div>
+    <div class="main_profile">
+      <img src="media/profile.jpg" alt="profile picture" class="profile_img" />
+      <h2 class="hello_profile">Hi, annatravel!</h2>
+    </div>
+
+    <div class="settings_container">
+      <h4 class="profile_settings_titel">Settings</h4>
+      <div class="settings_detailed">
+        <img src="media/settings.svg" alt="settings" class="settings_icons" />
+        <p class="settings_text">Edit profile</p>
+        <img src="media/settings arrow.svg" alt="arrow" class="settings_arrow" />
+      </div>
+    </div>
+
+    <div class="settings_container">
+      <h4 class="profile_settings_titel">Preferences</h4>
+      <div class="settings_detailed">
+        <img src="media/language.svg" alt="language" class="settings_icons" />
+        <p class="settings_text">Language</p>
+        <img src="media/settings arrow.svg" alt="arrow" class="settings_arrow" />
+      </div>
+
+      <div class="settings_detailed">
+        <img src="media/notifications.svg" alt="notifications" class="settings_icons" />
+        <p class="settings_text">Notifications</p>
+        <label class="switch">
+          <input type="checkbox" />
+          <span class="slider round"></span>
+        </label>
+      </div>
+    </div>
+
+    <div class="support_button">
+      <img src="media/support.svg" alt="support" class="support_icon" />
+      <h4 class="support_text">Support</h4>
+    </div>
+  </section>
+
+  <script src="js/main.js"></script>
+  <script src="js/router.js"></script>
+</body>
+
+</html>
